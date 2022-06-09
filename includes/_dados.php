@@ -1,7 +1,7 @@
 <?php
 
 $produtos = array(
-   0 => array('nome' => 'motorista', 'preço' => '5.000', 'descricao' => 'macaquinho com chapéu preto', 'imagem' => 'nft0.jpg'),
+   0 => array('nome' => 'motorista', 'preco' => '5.000', 'descricao' => 'macaquinho com chapéu preto', 'imagem' => 'nft0.jpg'),
    1 => array('nome' => 'rei', 'preco' => '3.000', 'descricao' => 'macaquinho rei colorido', 'imagem' => 'nft1.jpg'),
    2 => array('nome' => 'jorge curioso', 'preco' => '4.500', 'descricao' => 'macaquinho pescador', 'imagem' => 'nft2.jpg'),
    3 => array('nome' => 'azuleto', 'preco' => '1.500', 'descricao' => 'macaquinho chato azul', 'imagem' => 'nft3.jpg'),
