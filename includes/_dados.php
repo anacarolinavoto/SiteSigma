@@ -27,11 +27,10 @@ $produtos = array(
    23 => array('nome' => 'adidas', 'preco' => 'R$13.000,00', 'descricao' => 'macaquinho repetido mas com fundo diferente', 'imagem' => 'nft23.jpg'),
    24 => array('nome' => 'albino', 'preco' => 'R$54.000,00', 'descricao' => 'macaquinho bossass da antartica', 'imagem' => 'nft24.jpg'),
    25 => array('nome' => 'corinthiano', 'preco' => 'R$4.000,00', 'descricao' => 'macaquinho do corinthians', 'imagem' => 'nft25.jpg'),
-   26 => array('nome' => 'punk', 'preco' => 'R$30.000,00', 'descricao' => 'macaquinho encrenqueiro', 'imagem' => 'nft26.jpg'),
-   27 => array('nome' => 'punk', 'preco' => 'R$13.000,00', 'descricao' => 'macaquinho encrenqueiro', 'imagem' => 'nft27.jpg'),
-   28 => array('nome' => 'baby', 'preco' => 'R$17.000,00', 'descricao' => 'macaquinho encrenqueiro', 'imagem' => 'nft28.jpg'),
-   29 => array('nome' => 'punk', 'preco' => 'R$3.000,00', 'descricao' => 'macaquinho encrenqueiro', 'imagem' => 'nft29.jpg'),
-   30 => array('nome' => 'ble', 'preco' => 'R$61.000,00', 'descricao' => 'diabinho', 'imagem' => 'nft30.jpg'),
+   26 => array('nome' => 'pirata azul', 'preco' => 'R$30.000,00', 'descricao' => 'macaquinho com tapaolho blue', 'imagem' => 'nft26.jpg'),
+   27 => array('nome' => 'baby', 'preco' => 'R$13.000,00', 'descricao' => 'macaquinho bebe', 'imagem' => 'nft27.jpg'),
+   28 => array('nome' => 'rainbow teeth', 'preco' => 'R$17.000,00', 'descricao' => 'macaquinho sorridente legal', 'imagem' => 'nft28.jpg'),
+   29 => array('nome' => 'chapado em drugs', 'preco' => 'R$61.000,00', 'descricao' => 'macaquinho louco', 'imagem' => 'nft29.png'),
 );
 
 ?>
