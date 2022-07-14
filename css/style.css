@@ -4,13 +4,18 @@
     padding: 0;
 }
 header{
-    background-color: none;
-    width: 100%;
-    height: 0px;
+    background-color: black;
+    width: auto;
+    height: auto;
     display: block;
+    color: aliceblue;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: fuchsia;
 }
 body{
-    background-color: none;
+    background-color: black;
     display: block;
     height: 500px;
     width: 100%;
