@@ -24,3 +24,41 @@ footer{
 #contato{
     margin-top: 15px;
 }
+#contato h1{
+    color: fuchsia;
+    margin-top: 80px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 60px; 
+}
+#index{
+    margin-top: 80px; 
+    text-align: center;
+}
+#index h2{
+    color: fuchsia; 
+    font-size: 65px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+input, textarea {
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    color: #999999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+textarea{
+width: 400px;
+height: 150px;
+max-width: 400px;
+line-height: 18px;
+}
+.btn{
+    background-color: fuchsia;
+    border: fuchsia;
+}
+.btn:hover {
+    background-color: mediumslateblue;
+}

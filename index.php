@@ -6,11 +6,22 @@ include_once './includes/_header.php';
 ?>
 
 
-<div class="conteiner">
+<div class="conteiner" id="index">
    <h2>Promoção</h2>
    <div class="row m-3">
    <?php 
-   for ($i=0; $i < 30; $i++) {
+ 
+   $sql = "SELECT * from categorias where Ativo = 1";
+
+   $exec = mysqli_query($conn, $sql);
+
+   $numProdutos = mysqli_num_rows($exec);
+ 
+   while ($dados = mysqli_fetch_assoc($exec)){
+     echo '<h1>'.$dados ['Nome']. '</h1>';
+   }
+
+   for ($i=0; $i < 6; $i++) {
    ?>
    <div class="card" style="width: 18rem; margin-right:1cm; margin-top: 1cm; margin-left:2cm;">
      <img class="card-img-top" style='height: 250px;'src="./content/<?php echo $produtos[$i]['imagem'];?>" alt="Card image cap">

@@ -1,5 +1,6 @@
 <?php
 // include do footer
+include_once './includes/_banco.php';
 include_once './includes/_dados.php';
 include_once './includes/_head.php';
 include_once './includes/_header.php';
@@ -19,7 +20,7 @@ if (isset ( $_POST['txtNome']) ) {
 
 <h1>Contato</h1>
 <form action="./contato.php" method="post">
-    <ul>
+    <ul style=" list-style: none;">
         <li>
         <label for="txtNome">Nome Completo</label>
         <input type="text" name="txtNome" id="txtNome">
