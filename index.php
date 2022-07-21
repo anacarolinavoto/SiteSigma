@@ -11,7 +11,7 @@ include_once './includes/_header.php';
    <div class="row m-3">
    <?php 
  
-   $sql = "SELECT * from produtos where Ativo = 1";
+   $sql = "SELECT * from produtos where Ativo = 1 LIMIT 3";
 
    $exec = mysqli_query($conn, $sql);
 
@@ -24,7 +24,7 @@ include_once './includes/_header.php';
       <div class="card-body">
        <h5 class="card-title"><?php echo $dados['nome']; ?></h5>
        <p class="card-text"><?php echo $dados['descricao']; ?></p>
-       <a href="produto-detalhe.php?id=<?php echo $i;?>&tipo=promocao" class="btn btn-primary">Comprar</a>
+       <a href="produto-detalhe.php?id=<?php echo $dados['produtosID'];?>&tipo=promocao" class="btn btn-primary">Comprar</a>
       </div> 
    </div> 
    <?php

@@ -1,12 +1,11 @@
 <?php
 include_once './includes/_banco.php';
-include_once './includes/_dados.php';
 include_once './includes/_head.php';
 include_once './includes/_header.php';
 ?>
 
 <div class="conteiner">
-   <h2>Produtos</h2>
+   <h2 style="text-align: center; color: white;">Produtos</h2>
    <div class="row m-3">
    <?php 
  

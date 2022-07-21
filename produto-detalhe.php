@@ -7,7 +7,7 @@ $id = $_GET['id'];
 $tipo = $_GET['tipo'];
 
 ?>
-<div class="container" style="margin-top:3cm; margin-left:11cm">
+<div class="container" style="margin-top:3cm; margin-left:11cm; color: white">
 <div class="row">
 <div class="col" style="padding: 0px">
 <img style='width: 400px; height: 350px;' src='./content/<?php echo $produtos[$id]['imagem'];?>'>
