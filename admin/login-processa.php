@@ -1,18 +1,11 @@
 <?php
 
-
-
 session_start();
 
-include_once '../includes/_dados.php';
-
-
+include_once '../includes/_banco.php';
 
 $acao = $_REQUEST['acao'];
-
-
-
-
+print($acao);
 switch ($acao) {
 
 
@@ -36,7 +29,8 @@ case 'login';
         $senha = $_POST ['senha'];
 
 
-
+    print($email);
+    print($senha);
     $sql = "SELECT * FROM usuarios WHERE Email = '" .$email. "' AND Senha = '".$senha."'";
 
     $resultado = mysqli_query($conn,$sql);
@@ -51,7 +45,7 @@ case 'login';
 
         $_SESSION['LOGIN'] = array('Nome' =>$dados['Nome']);
 
-        header('location: ./index.php');
+        header('location: ./categoria-salvar.php');
 
    
 

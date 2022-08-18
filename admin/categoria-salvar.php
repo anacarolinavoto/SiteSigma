@@ -10,8 +10,8 @@ if ( isset ($_GET['id']) || !empty ($_GET['id'])) {
     $dados = mysqli_fetch_array($resultado,MYSQLI_ASSOC);
 } else {
     $id = '';
-    $dados['Nome'] = '';
-    $dados['Descricao'] = '';
+    $dados['nome'] = '';
+    $dados['descricao'] = '';
 }
 
 ?>
@@ -24,9 +24,9 @@ if ( isset ($_GET['id']) || !empty ($_GET['id'])) {
         <input type="text" value="salvar" name="acao">
         <input type="text" name="id" id="<?php echo $id;?>"><br>
         <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" value="<?php echo $dados['Nome'];?>"><br>
+        <input type="text" id="nome" name="nome" value="<?php echo $dados['nome'];?>"><br>
         <label for="descricao">Descrição:</label><br>
-        <textarea name="descricao" id="descricao" cols="30" rows="10"><?php echo $dados ['Descricao'];?></textarea><br>
+        <textarea name="descricao" id="descricao" cols="30" rows="10"><?php echo $dados ['descricao'];?></textarea><br>
         <hr>
         <input type="submit" value="Enviar">
     </form>

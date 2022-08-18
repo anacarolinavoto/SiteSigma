@@ -4,7 +4,7 @@ include_once "./_header.php";
 include_once "_valida.php";
 
 
-$sql = "SELECT * from categorias";
+$sql = "SELECT * from categorias WHERE Ativo = true";
 
 $resultado = mysqli_query($conn, $sql);
 
@@ -34,7 +34,7 @@ if ($resultado){
   
 <tr>
 <td><?php echo $dado ["categoriaID"] ?></td>
-<td><a href="categoria-salvar.php?acao=salvar&id=<?php echo $dado['categoriaID'];?>"><?php echo $dado['Nome'];?></a></td>
+<td><a href="categoria-salvar.php?acao=salvar&id=<?php echo $dado['categoriaID'];?>"><?php echo $dado['nome'];?></a></td>
 <td><a href="categoria-processa.php?acao=excluir&id=<?php echo $dado['categoriaID'];?>">Excluir</a></td>
 </tr>
 
