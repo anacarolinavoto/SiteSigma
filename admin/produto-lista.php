@@ -3,8 +3,8 @@ include_once "../includes/_banco.php";
 include_once "./_header.php";
 include_once "_valida.php";
 
+$sql = "SELECT * from produtos WHERE Ativo = true";
 
-$sql = "SELECT * from produtos";
 
 $resultado = mysqli_query($conn, $sql);
 
@@ -15,7 +15,7 @@ include_once "./_menu.php";
 <main>
 <h2 style="text-align: center"> Administração de categorias</h2>
 
-<a href="produto-salvar.php"></a>
+<a href="produto-salvar.php">Inserir</a>
 <hr>
 <table border= "1">
 <tr>
@@ -33,9 +33,9 @@ if ($resultado){
 ?>
   
 <tr>
-<td><?php echo $dado ["produtoID"] ?></td>
-<td><a href="produto-salvar.php?acao=salvar&id=<?php echo $dado['categoriaID'];?>"><?php echo $dado['Nome'];?></a></td>
-<td><a href="produto-processa.php?acao=excluir&id=<?php echo $dado['categoriaID'];?>">Excluir</a></td>
+<td><?php echo $dado ["produtosID"] ?></td>
+<td><a href="produto-salvar.php?acao=salvar&id=<?php echo $dado['produtosID'];?>"><?php echo $dado['nome'];?></a></td>
+<td><a href="produto-processa.php?acao=excluir&id=<?php echo $dado['produtosID'];?>">Excluir</a></td>
 </tr>
 
 <?php

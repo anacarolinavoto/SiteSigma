@@ -15,6 +15,9 @@ include_once "./_menu.php";
 <main>
 <h2 style="text-align: center"> Administração de categorias</h2>
 
+<a href="categoria-salvar.php">Inserir</a>
+
+
 <a href="categoria-salvar.php"></a>
 <hr>
 <table border= "1">
