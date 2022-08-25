@@ -21,12 +21,12 @@ if ( isset ($_GET['id']) || !empty ($_GET['id'])) {
     <a href="categoria-lista.php">Listagem</a>
     <hr>
     <form style="text-align: center;" action="categoria-processa.php" method="post">
-        <input type="text" value="salvar" name="acao">
-        <input type="text" name="id" id="<?php echo $id;?>"><br>
+        <input type="hidden" value="salvar" name="acao">
+        <input type="hidden" name="id" id="<?php echo $id;?>"><br>
         <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" value="<?php echo $dados['nome'];?>"><br>
+        <input type="text" id="nome" name="nome" value="<?php echo $dados['Nome'];?>"><br>
         <label for="descricao">Descrição:</label><br>
-        <textarea name="descricao" id="descricao" cols="30" rows="10"><?php echo $dados ['descricao'];?></textarea><br>
+        <textarea name="descricao" id="descricao" cols="30" rows="10"><?php echo $dados ['Descricao'];?></textarea><br>
         <hr>
         <input type="submit" value="Enviar">
     </form>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Jul-2022 às 17:26
+-- Tempo de geração: 25-Ago-2022 às 17:12
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -48,7 +48,8 @@ INSERT INTO `categorias` (`categoriaID`, `Nome`, `Ativo`) VALUES
 (8, 'bicicleta', 1),
 (9, 'brincos', 1),
 (10, 'tatoos', 1),
-(11, 'sapatinhos', 1);
+(11, 'sapatinhos', 0),
+(12, 'aaaaa', 1);
 
 -- --------------------------------------------------------
 
@@ -103,6 +104,26 @@ INSERT INTO `produtos` (`produtosID`, `nome`, `descricao`, `imagem`, `preco`, `a
 (32, 'rainbow teeth', 'macaquinho sorridente legal', 'nft28.jpg', 7000, 1, 1),
 (33, 'chapado em drugs', 'macaquinho louco', 'nft29.jpg', 61000, 1, 1);
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `usuarioID` int(10) UNSIGNED NOT NULL,
+  `name` varchar(100) NOT NULL DEFAULT '',
+  `senha` varchar(45) NOT NULL DEFAULT '',
+  `email` varchar(45) NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`usuarioID`, `name`, `senha`, `email`) VALUES
+(1, 'ana', '2005', 'anacarolina.voto@gmail.com');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -120,6 +141,12 @@ ALTER TABLE `produtos`
   ADD PRIMARY KEY (`produtosID`);
 
 --
+-- Índices para tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`usuarioID`);
+
+--
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
@@ -127,13 +154,19 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `categoriaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `categoriaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
   MODIFY `produtosID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
+-- AUTO_INCREMENT de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `usuarioID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
